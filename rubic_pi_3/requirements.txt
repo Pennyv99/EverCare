@@ -1,0 +1,36 @@
+fastapi>=0.104,<0.110
+uvicorn[standard]>=0.24,<0.30
+
+# Database
+motor>=3.3.0
+pymongo
+
+# Validation
+pydantic>=2.5,<3.0
+
+# File uploads
+python-multipart>=0.0.6,<0.1
+
+# CV / ML
+numpy>=1.23,<1.27
+scipy>=1.10,<1.12
+opencv-python>=4.8,<4.10
+insightface>=0.7,<0.8
+onnxruntime>=1.16,<2.0
+
+# Local audio and voice
+sounddevice>=0.4,<0.5
+openai-whisper>=20230314
+piper-tts>=1.4.2,<2.0
+
+# Agent / MCP
+mcp>=0.4.0
+openai>=1.68,<3.0
+
+# Scheduling
+apscheduler>=3.10,<4.0
+
+# HTTP and utilities
+requests>=2.31,<2.32
+redis>=5.0,<6.0
+python-dotenv>=1.0,<2.0

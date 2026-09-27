@@ -1,0 +1,40 @@
+# Memex.AI Backend - Environment Setup & Running Commands
+
+# 1. Create a new Python virtual environment
+python3 -m venv venv
+
+# 2. Activate the virtual environment
+# On Linux/Mac:
+source venv/bin/activate
+
+# 3. Upgrade pip, setuptools, and wheel
+pip install --upgrade pip setuptools wheel
+
+# 4. Install all required packages from requirements.txt
+pip install -r requirements.txt
+
+# 5. Verify installation by checking package versions
+pip list
+
+
+# ============================================================================
+# OPTIONAL: ARM64 Build Dependencies (for Raspberry Pi)
+# ============================================================================
+
+# If you need to compile packages from source:
+sudo apt-get install -y build-essential python3-dev \
+  libssl-dev libffi-dev cmake pkg-config
+pip install insightface
+sudo apt-get install -y libgl1 libglib2.0-0
+sudo apt-get install -y \
+  portaudio19-dev libportaudio2 \
+  libsndfile1 \
+  ffmpeg \
+  libasound2-dev
+
+bluetoothctl
+power on
+agent on
+default-agent
+connect 3C:B0:ED:E7:B7:67
+bluetoothctl info 3C:B0:ED:E7:B7:67

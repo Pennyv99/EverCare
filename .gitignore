@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.env
+*.log
+
+# Enrolled faces and downloaded voice models stay on the device
+data/
+
+# Local iOS secrets and Xcode user state
+ios/Configuration/Secrets.xcconfig
+xcuserdata/
+*.xcuserstate
